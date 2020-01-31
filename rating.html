@@ -13112,71 +13112,6 @@ div#notebook {
 
 
 
-
-  
-
-  <div class="
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
-<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-    <span class="c1">// AUTORUN ALL CELLS ON NOTEBOOK-LOAD!</span>
-    <span class="nx">require</span><span class="p">(</span>
-        <span class="p">[</span><span class="s1">&#39;base/js/namespace&#39;</span><span class="p">,</span> <span class="s1">&#39;jquery&#39;</span><span class="p">],</span> 
-        <span class="kd">function</span><span class="p">(</span><span class="nx">jupyter</span><span class="p">,</span> <span class="nx">$</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">$</span><span class="p">(</span><span class="nx">jupyter</span><span class="p">.</span><span class="nx">events</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;kernel_ready.Kernel&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-                <span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-                  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Auto-running all cells-below...&quot;</span><span class="p">);</span>
-                  <span class="nx">jupyter</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;jupyter-notebook:run-all-cells-below&#39;</span><span class="p">);</span>
-                  <span class="c1">// jupyter.actions.call(&#39;jupyter-notebook:save-notebook&#39;);</span>
-                <span class="p">},</span> <span class="mi">60000</span><span class="p">);</span> <span class="c1">// 60000 for 1 hour interval gap</span>
-            <span class="p">});</span>
-        <span class="p">}</span>
-    <span class="p">);</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    
-
-
-<div class="output_html rendered_html output_subarea ">
-<script>
-    // AUTORUN ALL CELLS ON NOTEBOOK-LOAD!
-    require(
-        ['base/js/namespace', 'jquery'], 
-        function(jupyter, $) {
-            $(jupyter.events).on("kernel_ready.Kernel", function () {
-                setInterval(function(){
-                  console.log("Auto-running all cells-below...");
-                  jupyter.actions.call('jupyter-notebook:run-all-cells-below');
-                  // jupyter.actions.call('jupyter-notebook:save-notebook');
-                }, 60000); // 60000 for 1 hour interval gap
-            });
-        }
-    );
-</script>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-  </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="How-would-you-rate-the-course-so-far?">How would you rate the course so far?<a class="anchor-link" href="#How-would-you-rate-the-course-so-far?">&#182;</a></h2><p>0 - not useful, 10 - very useful</p>
@@ -13232,7 +13167,7 @@ div#notebook {
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Thank you for your feedback. Much appreciated!</p>
+<p>Thank you for your feedback. It is most welcome!</p>
 
 </div>
 </div>

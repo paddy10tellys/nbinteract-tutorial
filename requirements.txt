@@ -1,3 +1,12 @@
+# Requirements for the demo notebooks
+# Useful for MyBinder configuration
+pip==20.0.2
+pandas
 numpy
-ipywidgets
+datascience
+folium
+matplotlib
 nbinteract
+scipy
+jupyter-book
+ipywidgets
